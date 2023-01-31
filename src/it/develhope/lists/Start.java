@@ -18,6 +18,7 @@ public class Start {
        System.out.println(randomNumbers);
        randomNumbers.addAll(divisorsOf52);
        System.out.println(randomNumbers);
+       System.out.println(randomNumbers.size());
 
 
 
