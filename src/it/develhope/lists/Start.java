@@ -2,6 +2,7 @@ package it.develhope.lists;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class Start {
@@ -17,6 +18,16 @@ public class Start {
        randomNumbers.add(12);
        System.out.println(randomNumbers);
        randomNumbers.addAll(divisorsOf52);
+       System.out.println(randomNumbers);
+       System.out.println(randomNumbers.size());
+       Iterator<Integer> i = randomNumbers.iterator();
+       while (i.hasNext()) {
+          Integer i1 = i.next();
+          if(i1.equals(randomNumbers.get(i.next()))){
+             randomNumbers.remove(i1);
+          }
+
+       }
        System.out.println(randomNumbers);
        System.out.println(randomNumbers.size());
 
