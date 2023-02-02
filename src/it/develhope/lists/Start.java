@@ -23,7 +23,6 @@ public class Start {
        System.out.println("This list has " + randomNumbers.size() + " items");
 
        randomNumbers = randomNumbers.stream().distinct().collect(Collectors.toList());
-       //FIXME write again the line above using an iterator
        System.out.println("This is random numbers' list without duplicates: " + randomNumbers);
        System.out.println("This new list has " + randomNumbers.size() + " items");
        Collections.sort(randomNumbers, Collections.reverseOrder());
